@@ -1,0 +1,39 @@
+/* Carousel container */
+.carousel {
+    position: relative;
+    max-width: 550px; /* Adjust according to your layout */
+    height: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* Inner container for images */
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Images within the carousel */
+  .carousel-inner img {
+    width: 100%;
+  }
+  
+  /* Previous and Next buttons */
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
