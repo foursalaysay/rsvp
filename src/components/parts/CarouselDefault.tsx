@@ -53,7 +53,7 @@ export function CarouselDefault() {
         </Tabs>
       </div>
     </div>
-    <div className="flex items-center justify-center mt-10">
+    <div className="flex items-center justify-center my-10">
         <Button><a
         className="font-poppins lg:w-96 md:w-72 w-40 " 
         href={GoogleLink}>Accept the Invitation</a></Button>
