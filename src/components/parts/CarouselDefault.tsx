@@ -8,7 +8,7 @@ import lastpic from '@/images/2.jpg'
 
 export function CarouselDefault() {
 
-  const GoogleLink = "https://forms.gle/sbGBqjc9hizuTrNS6";
+  const GoogleLink = "https://forms.gle/3BHfWgdgjjBvwn8z9";
 
   // w-[420px] md:max-w-md lg:w-[1320px] 
 
