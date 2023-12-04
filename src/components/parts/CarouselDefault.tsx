@@ -8,7 +8,7 @@ import lastpic from '@/images/2.jpg'
 
 export function CarouselDefault() {
 
-  const GoogleLink = "https://forms.gle/3BHfWgdgjjBvwn8z9";
+  const GoogleLink = "https://l.messenger.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSeV13SYOvAqOjUUePQ_0y8SeS6P4hokeC9RdjrphHaZ-Ynhbg%2Fviewform&h=AT1F8twMwNeL_23j5eBswWmxoQsXVr54DTZ0TdtIKPrd9K0wLIzSeCp4hxUJHg5-sx_zOOpZoq7WE0ErxQdnbKiW-DotyTmcJmfui7ualbIrv1JZ-A5J7u92-9lBVbBua5OakA";
 
   // w-[420px] md:max-w-md lg:w-[1320px] 
 
