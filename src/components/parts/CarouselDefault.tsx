@@ -1,9 +1,9 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from '@/components/ui/button'
 
-import info2 from '@/images/info2.jpg'
-import info3 from '@/images/info3.jpg'
-import info4 from '@/images/info4.jpg'
+import info2 from '@/images/info2.png'
+import info3 from '@/images/info1.png'
+import info4 from '@/images/info3.png'
 import lastpic from '@/images/2.jpg'
 
 export function CarouselDefault() {
@@ -18,13 +18,13 @@ export function CarouselDefault() {
     <div className="flex lg:flex-row flex-col max-w-8xl h-auto justify-center items-center">
       <div className="w-96 lg:w-1/2" >
           <img
-          className=" w-96 lg:w-full  h-screen"
+          className=" w-96 lg:w-full  h-96 sm:h-screen"
           src={lastpic} alt="" />
       </div>
       <div className="w-96 lg:w-1/2 flex items-center justify-center h-screen">
               <Tabs defaultValue="image1" 
               className=" w-full flex flex-col items-center justify-center">
-              <TabsList className="lg:flex-row flex-col lg:gap-0 gap-2 lg:w-[600px] w-96 lg:h-10 h-40">
+              <TabsList className="lg:flex-row flex-col lg:gap-0 gap-2 lg:w-[600px] w-96 lg:h-10 h-40 items-center justify-center">
                 <TabsTrigger
                 className="w-56  font-poppins text-green-500 active:bg-green-400 hover:border-2 hover:border-green-500"
                 value="image1">Families and Sponsors</TabsTrigger>
@@ -37,7 +37,7 @@ export function CarouselDefault() {
               </TabsList>
               <TabsContent value="image1">
                   <img
-                  className="w-[400px] h-[550px]" 
+                  className="w-[300] sm:w-[400px] h-[450px] sm:h-[550px]" 
                   src={info3} alt="" />
               </TabsContent>
               <TabsContent value="image2">
@@ -53,7 +53,7 @@ export function CarouselDefault() {
         </Tabs>
       </div>
     </div>
-    <div className="flex items-center justify-center m-5">
+    <div className="flex items-center justify-center mt-10">
         <Button><a
         className="font-poppins lg:w-96 md:w-72 w-40 " 
         href={GoogleLink}>Accept the Invitation</a></Button>
