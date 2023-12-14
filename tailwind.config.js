@@ -38,7 +38,8 @@ module.exports = withMT({
         'playpen' : ['Playpen Sans', 'cursive'],
         'poppins' : ['Poppins', 'sans-serif'],
         'natalia' : ['Natalia', 'cursive'],
-        'ibbara': ['Ibarra Real Nova', 'serif']
+        'ibbara': ['Ibarra Real Nova', 'serif'],
+        'quicksand' : ['Quicksand', 'sans-serif']
       },
       colors: {
         'custom-green' : "#B2AC88",

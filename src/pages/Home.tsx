@@ -3,12 +3,11 @@ import { Button } from "@/components/ui/button"
 import { Link } from 'react-router-dom'
 import HomeImage from '../images/7.jpg'
 
+import Timer from '@/components/parts/Timer'
 
 const Home = () => {
 
-// lg: w-96 xl:w-96
 
-// 
   return (
     
     <div className=' mx-0 w-full
@@ -20,6 +19,8 @@ const Home = () => {
           <h2 className="font-natalia text-5xl lg:text-9xl text-center">Kirby</h2>
           <p className="font-natalia text-lg lg:text-4xl text-center">and</p>
           <h2 className="font-natalia text-5xl lg:text-9xl text-center">Genevieve</h2>
+          <hr />
+          <Timer />
          
           <Button className="lg:mt-8 mt-5 lg:w-72 w-40">
             <Link to='/info' className='lg:text-md text-xs font-poppins '>See Details</Link>
