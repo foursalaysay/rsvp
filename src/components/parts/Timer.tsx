@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 import {
     useRef, useState, useEffect
@@ -8,7 +8,6 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
@@ -28,7 +27,7 @@ const Timer = () => {
     const interval = useRef<NodeJS.Timeout | null>(null);
 
     const startTimer = () => {
-        const countdownDate : Date = new Date('January 06, 2024 00:00:00');
+        const countdownDate : Date = new Date('January 06, 2024 02:00:00');
 
         interval.current = setInterval(() => {
             const now : number= new Date().getTime();
@@ -36,7 +35,7 @@ const Timer = () => {
             const diff : number = countdownDate.getTime() - now;
 
             const days = Math.floor(diff / (1000 * 60 * 60 *24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24) / (10000 * 60 * 60 )));
+            const hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60 ));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
             
@@ -67,32 +66,33 @@ const Timer = () => {
     },[])
     
   return (
-    <div>
+    <div className='w-full mx-auto'>
        <Card>
             <CardHeader className='flex flex-col items-center justify-center'>
-                <CardTitle>Wedding Countdown</CardTitle>
+                <CardTitle className='font-poppins'>Wedding Countdown</CardTitle>
                 <CardDescription>Let us altogether be excited for this wondrous event</CardDescription>
             </CardHeader>
-            <CardContent className='flex flex-row gap-5'>
+            <CardContent className='flex flex-row items-center justify-around'>
                 <div
                  className='flex flex-col gap-2 items-center justify-center'>
-                    <p className='font-quicksand'>{timerDays}</p>
-                    <p className='font-quicksand'>DAYS</p>
+                    <p className='font-quicksand text-md lg:text-5xl'>{timerDays}</p>
+                    <p className='font-quicksand text-sm'>Days</p>
                 </div>
                 <div
                  className='flex flex-col gap-2 items-center justify-center'>
-                    <p className='font-quicksand'>{timerHours}</p>
-                    <p className='font-quicksand'>HOURS</p>
+                    <p className='font-quicksand text-md lg:text-5xl'>{timerHours}</p>
+                    <p className='font-quicksand text-sm'>Hours</p>
                 </div>
                 <div
                  className='flex flex-col gap-2 items-center justify-center'>
-                    <p className='font-quicksand'>{timerMinutes}</p>
-                    <p className='font-quicksand'>MINUTES</p>
+                    <p className='font-quicksand text-md lg:text-5xl'>{timerMinutes}</p>
+                    <p className='font-quicksand text-sm'>Minutes</p>
                 </div>
                 <div
-                 className='flex flex-col gap-2 items-center justify-center'>
-                    <p className='font-quicksand'>{timerSeconds}</p>
-                    <p className='font-quicksand'>SECONDS</p>
+                 className='flex flex-col gap-2 items-center justify-center
+                 '>
+                    <p className='font-quicksand text-md lg:text-5xl'>{timerSeconds}</p>
+                    <p className='font-quicksand text-sm'>Seconds</p>
                 </div>
             </CardContent>
             
