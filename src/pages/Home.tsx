@@ -9,9 +9,10 @@ const Home = () => {
 
 
   return (
-    
+    // RETURNS THE HOME PAGE
     <div className=' mx-0 w-full
     h-screen sm:h-screen
+    overflow-hidden
     flex  md:flex-row flex-col mobile:items-center mobile:justify-center
     bg-gradient-to-r from-yellow-50 to-green-300 border-2 border-blue-gray-600'>
         <div className="w-96 lg:w-3/5 p-10 flex flex-col items-center justify-center">
@@ -28,7 +29,6 @@ const Home = () => {
           </Button>
         </div>
         <div>
-         
           <img
             className='flex w-40 sm:w-[400px] lg:w-[400px] mobile:self-center pop-0 m-0 h-full overflow-hidden'
           src={HomeImage} alt="" />

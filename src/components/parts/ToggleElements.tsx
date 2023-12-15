@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Link from 'react-router-dom'
 
 import Image1 from '@/images/image1.jpg'
 import { CarouselDefault } from "./CarouselDefault";
@@ -19,6 +20,9 @@ const ToggleElements = () => {
 
     <div className="flex flex-col max-w-8xl">
       <div className='flex lg:flex-row flex-col h-full lg:h-screen items-center justify-center'>
+     
+      <Button asChild><a href="/"></a>Home</Button>
+   
       <section className='w-full md:w-2/3 lg:w-2/5 flex flex-col items-center justify-center'>
         <Tabs defaultValue="event">
           <TabsList className='w-full mb-0 mt-10 sm:mt-0 sm:mb-20 md:w-72 lg:w-96 bg-gradient-to-r from-yellow-200 to-green-300'>
